@@ -5,18 +5,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <!-- REPLACE THIS WITH YOUR PROJECT NAME. EXAMPLE - Category tabs -->
-    <title>Coding Assesment L2 boilerplate</title>
-
+    <title>Coding Assessment L2 boilerplate</title>
 </head>
 
 <body>
-    <!-- Your code goes here -->
-    <div class="container">
-        <a href="https://github.com/mmdmrishabh/Coding-assessment-l2-Boilerplate-code/blob/main/Readme.md" target="_blank">Read how to work with boilerplate</a>
+<div class="tab">
+    <button class="tablinks" onclick="openCategory(event, 'men')">Men</button>
+    <button class="tablinks" onclick="openCategory(event, 'women')">Women</button>
+    <button class="tablinks" onclick="openCategory(event, 'kids')">Kids</button>
+</div>
+
+<div id="men" class="tabcontent">
+    <!-- Product cards for Men category -->
+    <div class="product-card">
+        <p>Men's Shirt</p>
+        <p>Vendor: XYZ Clothing</p>
+        <p>Price: $50</p>
+        <button class="add-to-cart" onclick="addToCart('Men\'s Shirt', 50)">Add to Cart</button>
     </div>
-    <!-- Happy coding 😊 -->
-    <script src="./script.js"></script>
+    <!-- Add more product cards for Men category here -->
+</div>
+
+<div id="women" class="tabcontent">
+    <!-- Product cards for Women category -->
+    <div class="product-card">
+        <p>Women's Dress</p>
+        <p>Vendor: Chic Boutique</p>
+        <p>Price: $70</p>
+        <button class="add-to-cart" onclick="addToCart('Women\'s Dress', 70)">Add to Cart</button>
+    </div>
+    <!-- Add more product cards for Women category here -->
+</div>
+
+<div id="kids" class="tabcontent">
+    <!-- Product cards for Kids category -->
+    <div class="product-card">
+        <p>Kids' T-shirt</p>
+        <p>Vendor: Tiny Tees</p>
+        <p>Price: $20</p>
+        <button class="add-to-cart" onclick="addToCart('Kids\' T-shirt', 20)">Add to Cart</button>
+    </div>
+    <!-- Add more product cards for Kids category here -->
+</div>
+
+<script src="./script.js"></script>
+<script>
+        console.log('====================================');
+        console.log("Connected");
+        console.log('====================================');
+    </script>
 </body>
 
 </html>
